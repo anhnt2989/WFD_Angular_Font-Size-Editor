@@ -1,0 +1,10 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label for="value">Nhập vào cỡ font (px): </label>
+  <input id="value" type="number" [value]="fontSize" (change)="onChange($event.target.value)">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+  Chọn cỡ font ở trên để thay đổi kích cỡ của tôi !!!
+</p>
